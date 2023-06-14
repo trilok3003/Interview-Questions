@@ -37,4 +37,20 @@
   | 2 | Structural | 
   | 3 | Component |
 </li>
+  <li>
+    
+  **Diagnose  analyze Memory Leaks with Chrome DevTools steps**
+    
+   - `open dev tools`
+   - `go to memory tab`
+   - `select Allocation instrumentation`
+   - `press start`
+    
+#### 2nd way
+    
+   - `open dev tools`
+   - `goto more tolls`
+   - `select Performance Monitor`
+    
+  </li>  
 </ol>  
