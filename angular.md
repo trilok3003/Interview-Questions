@@ -9,12 +9,19 @@
 
 - `Using AoT Compilation`
 - `Using OnPush Change Detection Strategy`  
+- `Detach Change Detection/NgZone`  
 - `Using Pure Pipes`  
 - `Unsubscribe from Observables`
 - `Lazy Loading`  
+- `Preloading Modules`  
 - `Use trackBy option for For Loop`  
 - `Avoid computation in template files`
 - `Usage of Web Workers`  
+- `Resolve Guards`
+- `Service Worker`
+- `Server-side rendering`
+- ` Angular Command Line Interface (CLI)`  
+- ` Tree-shaking`  
 
 </li>
 
