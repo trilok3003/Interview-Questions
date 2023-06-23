@@ -5,3 +5,4 @@
 ---
 
 - [Angular](angular.md)
+- [Javascript](javascript.md)
