@@ -10,7 +10,6 @@
   - vs code
   - webstorm
   </li>
-  <li>
 
   <li>
     
@@ -18,6 +17,12 @@
   
   </li>
 
+  <li>
+   
+  **ASKING QUESTIONS**
+  </li>
+  <li>
+    
   **READING DOCUMENTATION**
   </li>
 
@@ -52,5 +57,13 @@
   <li>
   
   **GAIN DOMAIN KNOWLEDGE**
+  </li>
+  <li>
+
+  **PAIR PROGRAM**
+  </li>
+  <li>
+
+  **FOCUSED DEBUGGING**
   </li>
 </ol>
