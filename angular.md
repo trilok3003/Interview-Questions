@@ -52,5 +52,20 @@
    - `goto more tolls`
    - `select Performance Monitor`
     
-  </li>  
+  </li>
+  
+  <li>
+    
+  **Required @Input() properties and ADDING A NULL CHECK**
+
+  ```
+@Input({ required: true }) person: string;
+ngOnInit() {
+  if (this.person === null || this.person === undefined) {
+    throw new TypeError("The input ‘Person’ is required");
+  }
+}
+  ```  
+  </li>
+  
 </ol>  
