@@ -67,5 +67,12 @@ ngOnInit() {
 }
   ```  
   </li>
+  <li>
+   
+  **make your application faster**
+  - Pure Pipes TO PREVENT METHOD CALLS 
+  - TRACKBY TO DECREASE THE NUMBER OF DOM MUTATIONS
+  - DETACH COMPONENTS FROM THE CHANGE DETECTION
   
+  </li>
 </ol>  
