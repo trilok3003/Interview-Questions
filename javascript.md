@@ -28,5 +28,43 @@ console.log(user);
   - `both have methods like get(),set(),has(),delete()`
 </li>
 
+<li>
+  
+  **distinct or remove duplicacy in array**
+
+  ```
+let arr=[2,3,3,2,5,6,2];
+
+arr.filter((ele, index, self) => self.indexOf(ele) === index)
+```
+ *second way*
+```
+[...new Set(arr)]
+```
+</li>
+
+<li>
+
+  **What will be output**
+  ```
+Promise.reject(1).then(function resolve() {console.log('hello')}).catch(console.log('err'));
+
+Output: err
+
+```
+</li>
+
+<li>
+
+  **Count sepecific item of array**
+
+  ```
+let arr=[2,3,3,2,5,6,2];
+let obj = {};
+arr.forEach(ele => obj[ele] = obj[ele] ? obj[ele] + 1 : 1)
+console.log(obj) // {2: 3, 3: 2, 5: 1, 6: 1}
+```
+</li>
+
 ---
 </ol>
