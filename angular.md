@@ -90,7 +90,6 @@ ngOnInit() {
 
   - `Web worker allows code in the background in separate thread without blocking main thread`
   - `Service workers are a proxy between the browser and the network.
-  - intercepting requests, requests to a cache,enabling offline access.
-  - `
+  - intercepting requests, requests to a cache,enabling offline access.`
   </li>
 </ol>  
