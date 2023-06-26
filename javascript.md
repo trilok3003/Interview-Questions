@@ -65,6 +65,11 @@ arr.forEach(ele => obj[ele] = obj[ele] ? obj[ele] + 1 : 1)
 console.log(obj) // {2: 3, 3: 2, 5: 1, 6: 1}
 ```
 </li>
+ <li>Es6 features</li>
+  <li>Arrow function vs regular function</li>
+  <li>destructuring</li>
+  <li>Default parameter, Rest parameter and Spread operator</li>
+  <li>Arrow function advantages and disadvantages</li>
 
 ---
 </ol>
