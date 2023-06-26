@@ -92,4 +92,12 @@ ngOnInit() {
   - `Service workers are a proxy between the browser and the network.`
   - `Service workers intercepting requests, requests to a cache,enabling offline access.`
   </li>
+  <li>**App Initializer**</li>
+  <li>**RouteReuseStrategy***</li>
+  <li>loadChildren vs children</li>
+  <li>Reducer</li>
+  <li>sharedService vs SharedModule</li>
+  <li>Promises vs Observables</li>
+  <li>Subject vs Behaviorsubject</li>
+  <li>Share data in siblings</li>
 </ol>  
