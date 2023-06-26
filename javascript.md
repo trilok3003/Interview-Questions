@@ -20,5 +20,13 @@ console.log(user);
 
 </li>
 
+<li>
+  
+  **Map vs WeakMap**
+  - `WeakMap is “A collection of key/value pairs whose key must be objects`
+  - `Map is “A collection of key/value pairs whose key must be objects and primitives`
+  - `both have methods like get(),set(),has(),delete()`
+</li>
+
 ---
 </ol>
