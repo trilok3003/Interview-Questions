@@ -75,4 +75,22 @@ ngOnInit() {
   - DETACH COMPONENTS FROM THE CHANGE DETECTION
   
   </li>
+
+  <li>
+    
+  **What is Tree Shaking ?**
+  - `eliminate dead code or unused modules`
+  - `The Angular CLI uses the Webpack bundler`
+  - `reducing the download size`
+  - `improving performance`
+  </li>
+  <li>
+    
+  **Web worker vs Service worker in angular**
+
+  - `Web worker allows code in the background in separate thread without blocking main thread`
+  - `Service workers are a proxy between the browser and the network.
+  - intercepting requests, requests to a cache,enabling offline access.
+  - `
+  </li>
 </ol>  
