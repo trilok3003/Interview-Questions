@@ -100,4 +100,11 @@ ngOnInit() {
   <li>Promises vs Observables</li>
   <li>Subject vs Behaviorsubject</li>
   <li>Share data in siblings</li>
+  <li>Ngrx</li>
+  <li>Rxjs</li>
+  <li>Of vs tap</li>
+  <li>ngDoCheck</li>
+  <li>ViewChild</li>
+<li>ChangeDetection</li>
+<li>ngZone</li>
 </ol>  
