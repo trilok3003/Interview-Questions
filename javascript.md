@@ -70,6 +70,13 @@ console.log(obj) // {2: 3, 3: 2, 5: 1, 6: 1}
   <li>destructuring</li>
   <li>Default parameter, Rest parameter and Spread operator</li>
   <li>Arrow function advantages and disadvantages</li>
-
+ <li>Promises merge</li>
+  <li>Hoisting and its prevent</li>
+  <li>
+Closure example
+</li>
+<li>
+  Higher order function example
+</li>
 ---
 </ol>
