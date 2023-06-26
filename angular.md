@@ -4,7 +4,7 @@
 
 <ol>
 <li>
-
+  
 **Performance Optimization in angular ?**
 
 - `Using AoT Compilation`
