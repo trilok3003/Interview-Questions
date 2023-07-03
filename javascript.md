@@ -78,5 +78,254 @@ Closure example
 <li>
   Higher order function example
 </li>
+<li>
+
+ **Shallow Copying vs. Deep Copying**
+ 
+ - `primitive data types  is copied by JavaScript`
+
+```let x = 3
+y = x // x is copied into y 
+y++ // y is incremented 
+console.log(y) // now 4 
+console.log(x) // still 3
+```
+
+- ` non-primitive data types like arrays and objects, only a reference to the values is passed. So when the copy is mutated, the original also gets mutated. This is also known as shallow copying`
+
+```
+let adam = {name: "Adam"};
+let jason = adam;
+jason.name = "Jason";
+console.log(adam.name);  // outputs "Jason" 
+console.log(jason.name); // outputs "Jason"
+```
+
+- **4 Ways to Deep Copy Objects in JavaScript**
+
+1. `shallow copy with =`
+    ```
+    const user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer"
+     }
+    const clone = user
+    console.log(user)
+    console.log(clone)
+     /*   { 
+           age: 28, 
+           job: "Web Developer", 
+           name: "Kingsley" 
+          } 
+
+          { 
+           age: 28, 
+           job: "Web Developer", 
+           name: "Kingsley" 
+          } 
+     */
+
+         clone.age = 30
+         console.log(user)
+         console.log(clone)
+     /* 
+      { 
+      age: 30, 
+      job: "Web Developer", 
+        name: "Kingsley" 
+       } 
+        { 
+       age: 30, 
+        job: "Web Developer", 
+        name: "Kingsley" 
+       } 
+       */
+    
+    ```  
+2. **JSON.stringify() and JSON.parse()  (doesn't copy functions)**
+
+```
+const user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer"
+}
+let clone = JSON.parse(JSON.stringify(user))
+console.log(user)
+console.log(clone)
+/* 
+{ 
+age: 28, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+{ 
+age: 28, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+*/
+
+clone.age = 32
+console.log(user)
+console.log(clone)
+/* 
+{ 
+age: 28, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+{ 
+age: 32, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+*/
+
+// JSON.stringify() does not copy functions.
+
+const user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer",
+    incrementAge: function() {
+  	  this.age++
+    }
+}
+```
+ 3. **Object.assign()  (doesn't deep copy nested objects)**
+
+```
+const user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer",
+    incrementAge: function() {
+  	  this.age++
+    }
+}
+let clone = Object.assign({}, user) // Copies user into clone
+clone.age = 32
+console.log(user)
+console.log(clone)
+/* 
+{ 
+age: 28, 
+incrementAge: function() { 
+this.age++ 
+}, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+{ 
+age: 32, 
+incrementAge: function() { 
+this.age++ 
+}, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+*/
+
+const user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer",
+    location: {
+      city: "Lagos",
+    }
+}
+const clone = Object.assign({}, user)
+
+clone.age = 32
+clone.location.city = "New York"
+console.log(user)
+console.log(clone)
+/* 
+{ 
+age: 28, 
+job: "Web Developer", 
+location: { 
+city: "New York" 
+}, 
+name: "Kingsley" 
+} 
+
+{ 
+age: 32, 
+job: "Web Developer", 
+location: { 
+city: "New York" 
+}, 
+name: "Kingsley" 
+} 
+*/
+
+```
+
+4. **... spread operator  (doesn't deep copy nested objects)**
+
+```
+const user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer"
+}
+const clone = {...user}
+console.log(clone);
+/* 
+{ 
+age: 28, 
+job: "Web Developer", 
+name: "Kingsley" 
+} 
+*/
+
+let user = {
+    name: "Kingsley",
+    age: 28,
+    job: "Web Developer",
+    location: {
+        city: "Lagos",
+    }
+}
+let clone = {...user}
+
+clone = {
+    ...clone,
+  age: 32,
+  location: {
+  	...clone.location,
+    city: "New York"
+  }
+}
+
+console.log(user)
+console.log(clone)
+  /* 
+{ 
+age: 28, 
+job: "Web Developer", 
+location: { 
+city: "Lagos" 
+}, 
+name: "Kingsley" 
+} 
+
+{ 
+age: 32, 
+job: "Web Developer", 
+location: { 
+city: "New York" 
+}, 
+name: "Kingsley" 
+} 
+*/
+
+```
+
+</li>
+
 ---
 </ol>
