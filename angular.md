@@ -107,4 +107,27 @@ ngOnInit() {
   <li>ViewChild</li>
 <li>ChangeDetection</li>
 <li>ngZone</li>
+
+<li>
+
+**Guards**
+
+- There are four different types of Guards:
+
+- CanActivate
+   `Checks to see if a user can visit a route.`
+
+- CanActivateChild
+  `Checks to see if a user can visit a routes children.`
+
+- CanDeactivate
+  `Checks to see if a user can exit a route.`
+
+- Resolve
+  `Performs route data retrieval before route activation.`
+
+- CanLoad
+  `Checks to see if a user can route to a module that lazy loaded.`
+`  
+</li>
 </ol>  
