@@ -130,4 +130,40 @@ ngOnInit() {
   `Checks to see if a user can route to a module that lazy loaded.`
 `  
 </li>
+
+<li>
+
+ **Hooks for the Component**
+ constructor
+This is invoked when Angular creates a component or directive by calling new on the class.
+
+ngOnChanges
+Invoked every time there is a change in one of th input properties of the component.
+
+ngOnInit
+Invoked when given component has been initialized.
+This hook is only called once after the first ngOnChanges
+
+ngDoCheck
+Invoked when the change detector of the given component is invoked. It allows us to implement our own change detection algorithm for the given component.
+
+- ngDoCheck and ngOnChanges should not be implemented together on the same component.
+- ngOnDestroy
+This method will be invoked just before Angular destroys the component.
+Use this hook to unsubscribe observables and detach event handlers to avoid memory leaks.
+
+**Hooks for the Component’s Children**
+- `These hooks are only called for components and not directives.`
+- ngAfterContentInit
+Invoked after Angular performs any content projection into the component’s view (see the previous lecture on Content Projection for more info).
+
+ngAfterContentChecked
+Invoked each time the content of the given component has been checked by the change detection mechanism of Angular.
+
+ngAfterViewInit
+Invoked when the component’s view has been fully initialized.
+
+ngAfterViewChecked
+Invoked each time the view of the given component has been checked by the change detection mechanism of Angular.
+</li>
 </ol>  
