@@ -166,4 +166,16 @@ Invoked when the component’s view has been fully initialized.
 ngAfterViewChecked
 Invoked each time the view of the given component has been checked by the change detection mechanism of Angular.
 </li>
+<li>
+
+ **Types of pipes**
+Pipes can be classified into:
+
+1. Pure Pipes
+A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe.
+
+2. Impure Pipes
+An impure pipe is called for every change detection cycle no matter whether the value or parameter(s) changes.
+  
+</li>
 </ol>  
