@@ -178,4 +178,17 @@ A pure pipe is only called when Angular detects a change in the value or the par
 An impure pipe is called for every change detection cycle no matter whether the value or parameter(s) changes.
   
 </li>
+<li>
+  
+  **What are Directives**
+  - `add new behavior or modify the existing behavior to the elements in the template`
+  - `Basically directives are used to manipulate the DOM for example adding/removing the element from DOM or changing the appearance of the DOM elements.`
+    ## Types of directives
+    `
+Component directive
+Structural directive
+Attribute directive
+    `
+  
+</li>
 </ol>  
