@@ -1,5 +1,5 @@
 # step 1
- `ng new angular-pwa`
+ `ng add @angular/pwa`
 # imp check 
  ## in dev application
  1.  Manifest settings (Application >> Manifest )
